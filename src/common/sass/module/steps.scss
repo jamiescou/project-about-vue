@@ -1,0 +1,16 @@
+/* stepInfo */
+.setp-box{ position:relative; height: 70px; width:100%; }
+.setp-box .stepInfo{position:relative; width:720px; margin:40px auto 0 auto;}
+.setp-box .stepInfo ul{margin-left:20px;}
+.setp-box .stepInfo li{float:left;width:20%;height:0.6em;background:#fb642a;list-style:none;margin-top:4px;}
+
+.setp-box .stepIco{border-radius:20px;padding:2px 10px;background:#fb642a;text-align:center; font-size: 14px; line-height:26px;color:#fff; position:absolute;width:30px;height:30px;}
+.setp-box .stepIco .stepText{color:#666;margin-top:2px;width:4em;text-align:center;margin-left:-1.4em;}
+.setp-box .stepIco .stepText9{color:#666;margin-top:2px;width:9em;text-align:center;margin-left:-4em;}
+.setp-box .step-to-do{ background:#fff !important; color:#000; border:1px solid #fb642a; }
+
+.setp-box .stepIco1{top:-0.7em;left:-1%;}
+.setp-box .stepIco2{top:-0.7em;left:20%;}
+.setp-box .stepIco3{top:-0.7em;left:40%;}
+.setp-box .stepIco4{top:-0.7em;left:60%;}
+.setp-box .stepIco5{top:-0.7em;left:80%;}

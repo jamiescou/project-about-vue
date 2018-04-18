@@ -1,0 +1,182 @@
+$baseColor:#fb642a;
+*{font-size:14px;}
+a, a:hover{text-decoration: none;}
+p{margin:0px; line-height:25px;}
+li{list-style:none;}
+
+.button-group{display: block; width: 200px; margin: 0 auto; text-align: center;}
+.button-group button{display:inline-block;}
+.button-group button.cancel{background: #aaa; border: 1px solid #aaa;}
+.button-group button.cancel:hover{background: #999; border: 1px solid #999;}
+.button-group button.confirm{background: #fb642a; border: 1px solid #fb642a;}
+.button-group button.confirm:hover{background: #fd4c23; border: 1px solid #fd4c23;}
+
+.item-group .item-tit{margin-bottom:15px;}
+.item-group .item-tit-icon{display:inline-block; width:4px; height:16px; margin-right: 10px; background:$baseColor; vertical-align: sub;}
+.item-group .item-tit-txt{display:inline-block; vertical-align: top;}
+.item-group .item-cnt{margin-bottom:30px; padding:0px 30px;}
+
+/************* 凭证转让 start *************/
+.supplier-voucher-assign{}
+.supplier-voucher-assign .td-remark{position:relative; height:75px;}
+// .supplier-voucher-assign .td-remark .remark{display: block; margin: 12px 30px 0px 20px; float: left; font-weight:600;}
+.supplier-voucher-assign .td-remark .remark{position:absolute;left: 24px; top: 22px; font-weight:600;}
+.supplier-voucher-assign .td-remark .textarea-remark{position:absolute; top: 9px; left: 111px; width:300px; border-radius:1px;}
+.supplier-voucher-assign .td-remark .sign-ellipse{top:0px;}
+
+/************* 凭证转让 end *************/
+
+/************* 融资意向 start *************/
+/****** 融资意向 ******/
+.financing .add-intention .icon-edit{font-size:10px;}
+/****** 添加融资意向 ******/
+.intention-add{padding:30px 50px 0px;}
+.intention-add p{color:#888; line-height: 36px;}
+.intention-add p .require{color:red;}
+.intention-add .cnt{padding:50px 0;}
+.intention-add .cnt .tit1{text-align:center; font-size:21px;font-weight: bold;color:#333;}
+.intention-add .cnt .partya span{color:#333;font-size: 15px;font-weight: bold;}
+.intention-add .cnt .paragraph{text-indent:2em; line-height:36px;}
+.intention-add .cnt .paragraph .el-form-item{width: 200px;  margin: 0px 10px;}
+.intention-add .cnt ol{padding-left: 20px;}
+.intention-add .cnt ol li{color: #888; line-height: 30px; list-style:inherit;}
+.intention-add .el-button{display: block;  margin: 30px auto;}
+.intention-add .el-input__icon{top: 8px;}
+.intention-add .cnt .input{margin: 0px 5px; padding: 5px; border:0px; border-bottom:1px solid #999; outline: 0; box-shadow: none; -webkit-box-shadow: none;}
+/************* 融资意向 start *************/
+
+/************* 融资意向详情 start *************/
+.intention-info .cnt{padding:0px 100px;}
+.intention-info .cnt p{color:#888; line-height:36px;}
+.intention-info .cnt .tit1{text-align:center; color:#333; font-size:20px;}
+.intention-info .cnt .partya span, .intention-info .partyb span{color:#333;}
+.intention-info .cnt .paragraph{text-indent:2em; line-height:36px;}
+.intention-info .cnt .paragraph .el-form-item{width: 200px;  margin: 0px 10px;}
+.intention-info .cnt ol{padding-left: 20px;}
+.intention-info .cnt ol li{color: #888; line-height: 30px; list-style:inherit;}
+
+.intention-info .button{display: block;  margin: 30px auto; background: #aaa; border: 1px solid #aaa;}
+.intention-info .button:hover{background: #999; border: 1px solid #999;}
+/************* 融资意向详情 start *************/
+
+/************* 融资申请详情 start *************/
+.apply-do .stuff-tip span{margin-right:5px; color: #fe6b64; font-size:14px;}
+.apply-do .stuff-checkbox{margin:15px 15px 30px;}
+.apply-do .stuff-checkbox .el-checkbox__inner{margin-right:5px;}
+.apply-do .stuff-checkbox .upload{color: #fb642a;}
+.apply-do .el-form-item__label{color:#333}
+.apply-do .el-input__inner{border-color:#e3e3e3; border-radius:0;}
+.apply-do .sign-protocol{position:relative; margin: 20px auto; padding:20px 45px; background:#f6f6f6; border-radius: 4px; border: 1px solid #e0e0e0;}
+.apply-do .sign-protocol .title{margin-bottom:15px; color:#333; font-size:20px; text-align:center;}
+.apply-do .sign-protocol input{margin: 0px 5px; padding: 5px; border:0px; border-bottom:1px solid #999; background:#f6f6f6; outline: 0; box-shadow: none; -webkit-box-shadow: none;}
+.apply-do .sign-protocol .partya, .sign-protocol .partyb{color:#333; margin-bottom:5px;}
+.apply-do .sign-protocol .cnt{color:#888; line-height:26px;}
+.apply-do .sign-protocol .img-left{position: absolute; top: 0; left: 0; width: 29px; height: 100%; background:url('../../../common/image/bg-supply-sign-protocol-left.png') repeat-y;}
+.apply-do .sign-protocol .img-right{position: absolute; top: 0; right:4px; width: 29px; height: 100%; background:url('../../../common/image/bg-supply-sign-protocol-right.png') repeat-y;}
+.apply-do .del{color:#fe6b64;}
+.apply-do .add{position: relative; float: right; width: 50px; margin-bottom:5px; cursor: pointer;}
+.apply-do .add .iconfont{position: absolute; top: -9px; color: #fb642a; font-size: 28px; right: 49px;}
+.apply-do .add span{color: #fb642a; font-size:14px;}
+/************* 融资申请详情 end *************/
+
+/************* 融资详情 start *************/
+.financing-info .item-cnt{padding:0px 30px;}
+.financing-info .button{display: block;  margin: 30px auto; background: #aaa; border: 1px solid #aaa;}
+.financing-info .button:hover{background: #999; border: 1px solid #999;}
+/************* 融资详情 start *************/
+
+/************* 付款 start *************/
+.repay .tip{color:#888; line-height:30px;}
+/************* 付款 end *************/
+
+/************* 信息管理 start *************/
+.info-safe .inner-wrap{width:640px; margin:0 auto;}
+.info-safe .el-form-item__content .el-input__inner{width:300px;}
+.info-safe .el-form-item__content .okbtn{width:300px}
+.info-safe .el-input{float: left; width: 300px; margin-right:15px;}
+.info-safe .right-tip{color:#999;}
+/************* 付款 end *************/
+
+/************* 信息管理 start *************/
+.user-supplier .inner-wrap{width:870px; margin:0 auto;}
+.user-supplier .el-form-item__content .el-input__inner{width:300px;}
+.user-supplier .el-form-item__content .okbtn{width:300px}
+.user-supplier .el-input{float: left; width: 300px; margin-right:15px;}
+.user-supplier .right-tip{color:#999;}
+/************* 付款 end *************/
+
+/************* 账户管理 start *************/
+
+.status-group{position:absolute; top:0px; right:0px; width: 220px; border: 1px solid #e3e3e3;}
+.status-group h3{font-size: 14px; background: #eee; color: #666; padding: 5px 15px; margin-bottom: 15px;}
+.status-group .status-item{margin-bottom:8px; padding: 5px 15px;}
+.status-group .status-item .status-item-name{width:90px; display: inline-block;}
+.status-group .status-item .el-button{width:90px; text-align: center;}
+.status-group .status-item .el-button.active{background:orange; border-color:orange;}
+.status-group .status-item .el-button.grap{background:#ccc; border-color:#ccc;}
+.money-group{height:80px;}
+.money-group .money-item{float:left; width: 200px;}
+.money-group .money-item .money-name{margin-bottom: 10px; font-size:14px; color:#666; text-align:center;}
+.money-group .money-item .money-value{font-size:28px; text-align:center;}
+.money-group .money-item .money-name span{margin-left:10px; color:#fb642a;}
+.money-group .money-item.recharge{padding-top: 20px; text-align: center;}
+.tab-group{margin-bottom:10px; overflow: hidden;}
+.tab-group .tab-item{float:left; margin-right:20px;}
+// .account-sub a{color:#fb642a;}
+
+/****** 添加银行账户 ******/
+.account-manage .select-group .el-select{width:148px;}
+.account-manage .select-group .el-select .el-input{width:148px;}
+.account-manage .select-group .el-select .el-input__inner{width:148px;}
+
+.account-bank .inner-wrap{width:640px; margin:0 auto;}
+.account-bank .el-form-item__content .el-input__inner{width:300px;}
+.account-bank .el-form-item__content .okbtn{width:300px}
+.account-bank .el-select{width:300px;}
+.account-bank .el-input{float: left; width: 300px; margin-right:15px;}
+
+.account-bank .remark{width:150px;}
+.account-bank .remark .el-input__inner{width:150px;}
+.account-bank .top-tip{margin-bottom: 10px; color:#990000;}
+.account-bank .top-tip .icon-iconset0144{margin-right:5px; color:orange;}
+.account-bank .bottom-tip{position:relative; padding-left:60px;}
+.account-bank .require{position:absolute; top:3px; left:50px;}
+/****** 提现 ******/
+.account-cash .bind-bank{padding:35px; border:1px solid #e3e3e3;}
+.account-cash .el-form{width:640px;}
+.account-cash .el-form-item__content .el-input__inner{width:300px;}
+.account-cash .el-form-item__content .okbtn{width:300px}
+.account-cash .el-select{width: 300px;}
+.account-cash .el-input{float: left; width: 300px; margin-right:15px;}
+.account-cash .payee{width:400px; margin-right:10px; padding:5px 20px; background:#f5fbfa; border:1px solid #fb642a;}
+.account-cash-confirm .el-form-item__label{font-weight: 500;}
+.account-cash-confirm .el-form-item{margin-bottom:15px;}
+.account-cash-confirm p{color:#888; line-height:36px;}
+.account-cash-confirm .icon-iconset0144{margin-right:5px; color:orange;}
+.account-cash-confirm .icon-xuanze{margin-right:5px; color:#fb642a; font-weight: 900;}
+/****** 提现记录 ******/
+.account-trade-record .item-cnt{padding:0px;}
+.account-trade-record .tx-group .tx-item{margin-right:20px; padding: 2px 8px; color: #999; border-radius: 1px; border:1px solid transparent; cursor:pointer;}
+.account-trade-record .tx-group .tx-item.active{color:#fb642a; border: 1px solid #fb642a;}
+.account-trade-record .stand-form{margin-bottom:10px; border-bottom:2px solid #f6f7fc;}
+.account-trade-record .stand-form fieldset{margin-left: -35px; padding-top: 15px;}
+.account-trade-record .el-tabs__header .el-tabs__item{font-size:16px;}
+.account-trade-record .money-outline{overflow: hidden; padding:20px 15px;}
+.account-trade-record .money-outline .item{float: left; width:250px;}
+.account-trade-record .money-outline .item-name{color:#888; font-size:14px;}
+.account-trade-record .money-outline .item-value{margin:15px 0px; color:#333; font-size:30px; font-weight: 600;}
+.account-trade-record .money-outline .item-remark{color:#888; font-size:12px;}
+.account-trade-record .tx-table{padding:10px 15px 5px;}
+/************* 账户管理 end *************/
+
+
+// 表格无数据提示样式
+.noDataMsg {
+  text-align: center;
+  color: gray;
+}
+
+/************* IE10、IE11适配问题(放于样式表最后面) ************/
+@media screen and(-ms-high-contrast:active),(-ms-high-contrast:none) {
+.apply-do .el-form-item-tip{ line-height: 36px; display: inline-block; vertical-align: top;}
+}

@@ -1,0 +1,258 @@
+/**左侧菜单栏***/
+// $baseColor:#fb642a;
+$baseColor:#fb642a;
+$inputBorder: #e60012;
+// $disabledBorder: #f1c0c4;
+// $disabledWord: #ddb3b7;
+// $disabledBg: #f7efef;
+
+/** 常用样式 start ***/
+*{font-size:14px;}
+a, a:hover{text-decoration: none;}
+p{margin:0px; line-height:25px;}
+li{list-style:none;}
+
+/** 常用样式 end ***/
+
+.operation-detail{
+	position:relative;
+	width:100%;
+	padding:5px;
+	border:3px solid #f5cd91;
+	width:942px;
+	margin:20px auto 0px;
+
+}
+.operation-detail .box {
+	width:100%;
+	// border:1px dashed #339999;
+	width:926px;
+	// height:400px;
+	// background-size:930px 400px;
+	background-repeat: no-repeat;
+	// background-image:url(../../image/v-back.png);
+	// padding:0px 19px;
+	border: 3px dashed #fde9cd;
+}
+
+.operation-detail .box img{
+	width:800px;
+}
+
+.operation-detail .box .title{
+	display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px auto;
+    text-align: center;
+    margin-top:15px;
+}
+.operation-detail .box .secondary{ display: block; margin-top: 21px; font-size: 14px; position: relative; color: #888888; }
+// .operation-detail .box .secondary{ display: block; margin-top: 38px; font-size: 14px; position: relative; color: #888888; }
+
+.operation-detail .box .no{
+	display: block;
+	position:absolute;
+	color: #666;
+	top:50px;
+	right:15px;
+}
+// .operation-detail .box .header{ height: 108px; width:100%; background: transparent; overflow: hidden; }
+.operation-detail .box .header{ height: 80px; width:100%; background: transparent; overflow: hidden; }
+.operation-detail .box .header .cashTime{
+	margin-top: 4px;
+  display: block;
+}
+.operation-detail .box .header .title{
+	// width:50px;
+	letter-spacing: 7px;
+}
+.certificatie-tbale-area{
+	// margin-top:25px;
+}
+.certificatie-tbale-area .title-text{
+	font-size:14px;
+	font-weight: bold;
+}
+.certificate-table{
+	border-spacing: 0;
+	box-sizing: border-box;
+	border-collapse: collapse;
+}
+
+.certificate-table th{
+	border:1px solid #bbbab7;
+    padding-left: 10px;
+    background:#f2f2f2;
+}
+
+.certificate-table td{
+	border:1px solid #bbbab7;
+}
+.certificate-table  th:first-of-type,td:first-of-type{
+	border-left:0px !important;
+
+}
+
+.certificate-table .noborder{
+	border:0px !important;
+}
+.certificate-table .title-left{
+	padding-left:20px
+}
+.certificate-table th:last-of-type,td:last-of-type{
+	border-right:0px !important;
+
+}
+.certificate-table tbody tr:last-of-type td{
+	border-bottom:0px;
+	border-top:0px;
+   // 	padding-left: 10px;
+}
+.certificate-table .center{
+	text-align:center;
+}
+.sign-ellipse{
+	position: absolute;
+	right: 85px;
+	min-width:200px;
+	height:100px;
+	margin-top:-60px;
+	margin-right:50px;
+	padding: 10px 15px;
+	border-radius: 50%;
+	border:1px solid red;
+	color:red;
+	float:right;
+
+}
+.sign-ellipse span:first-of-type{
+	display:block;
+	text-align:center;
+	margin-top:19px;
+}
+.sign-ellipse span:last-of-type{
+	display:block;
+	text-align:center;
+	margin-top:5px;
+}
+.cash-certificate{
+	width:675px;
+}
+.cash-certificate  label{
+	font-size:14px;
+	padding:5px;
+}
+
+.cash-certificate  .important{
+	background-color:#f2f2f2;
+}
+
+.cash-certificate  .important div{
+	font-size:14px;
+	padding:5px;
+}
+
+.image-content{
+	width:150px
+}
+
+.image-content .title{
+	display:block;
+	text-align:center;
+}
+
+.item-group .item-tit-icon{display:inline-block; width:4px; height:16px; margin-right: 10px; background:$baseColor; vertical-align: sub;}
+
+// input框后文字样式
+.inputMsg {
+	padding: 7px;
+	padding-left: 20px;
+	color: gray;
+}
+
+// 关闭按钮样式
+.closeBtn {
+	display: block;
+  margin: 30px auto;
+  background: #aaa;
+  border: 1px solid #aaa;
+}
+button.closeBtn:hover {
+	background: #aaa;
+	border: 1px solid #aaa;
+}
+
+// 详情页条目样式
+.item-group .item-tit{margin-bottom:15px;}
+.item-group .item-tit-icon{display:inline-block; width:4px; height:16px; margin-right: 10px; background:$baseColor; vertical-align: sub;}
+.item-group .item-tit-txt{display:inline-block; vertical-align: top;}
+.item-group .item-cnt{margin-bottom:30px; padding:0px 30px;}
+
+/*** 账户管理 start **/
+.status-group{position:absolute; top:0px; right:0px; width: 220px; border: 1px solid #e3e3e3;}
+.status-group h3{font-size: 14px; background: #eee; color: #666; padding: 5px 15px; margin-bottom: 15px;}
+.status-group .status-item{margin-bottom:8px; padding: 5px 15px;}
+.status-group .status-item .status-item-name{width:90px; display: inline-block;}
+.status-group .status-item .el-button{width:90px; text-align: center;}
+.status-group .status-item .el-button.active{background:orange; border-color:orange;}
+.status-group .status-item .el-button.grap{background:#ccc; border-color:#ccc;}
+.money-group{height:80px;}
+.money-group .money-item{float:left; width: 200px;}
+.money-group .money-item .money-name{margin-bottom: 10px; font-size:14px; color:#666; text-align:center;}
+.money-group .money-item .money-value{font-size:28px; text-align:center;}
+.money-group .money-item .money-name span{margin-left:10px; color:#fb642a;}
+.money-group .money-item.recharge{padding-top: 20px; text-align: center;}
+.tab-group{margin-bottom:10px; overflow: hidden;}
+.tab-group .tab-item{float:left; margin-right:20px;}
+// .account-sub a{color:#fb642a;}
+
+// 银行账户-创建子账户样式
+.account-manage .select-group .el-select{width:148px;}
+.account-manage .select-group .el-select .el-input{width:148px;}
+.account-manage .select-group .el-select .el-input__inner{width:148px;}
+.account-bank .inner-wrap{width:640px; margin:0 auto;}
+.account-bank .el-form-item__content .el-input__inner{width:300px;}
+.account-bank .el-form-item__content .okbtn{width:300px}
+.account-bank .el-select{width:300px;}
+.account-bank .el-input{float: left; width: 300px; margin-right:15px;}
+.account-bank .remark{width:150px;}
+.account-bank .remark .el-input__inner{width:150px;}
+.account-bank .top-tip{margin-bottom: 10px; color:#990000;}
+.account-bank .top-tip .icon-iconset0144{margin-right:5px; color:orange;}
+.account-bank .bottom-tip{position:relative; padding-left:60px;}
+
+// 提现样式
+.account-cash .bind-bank{padding:35px; border:1px solid #e3e3e3;}
+.account-cash .el-form{width:640px;}
+.account-cash .el-form-item__content .el-input__inner{width:300px;}
+.account-cash .el-form-item__content .okbtn{width:300px}
+.account-cash .el-select{width: 300px;}
+.account-cash .el-input{float: left; width: 300px; margin-right:15px;}
+.account-cash .payee{width:400px; margin-right:10px; padding:5px 20px; background:#f5fbfa; border:1px solid #fb642a;}
+.account-cash-confirm .el-form-item__label{font-weight: 500;}
+.account-cash-confirm .el-form-item{margin-bottom:15px;}
+.account-cash-confirm p{color:#888; line-height:36px;}
+.account-cash-confirm .icon-iconset0144{margin-right:5px; color:orange;}
+.account-cash-confirm .icon-xuanze{margin-right:5px; color:#fb642a; font-weight: 900;}
+
+// 提现记录样式
+.account-trade-record .item-cnt{padding:0px;}
+.account-trade-record .tx-group .tx-item{margin-right:20px; padding: 2px 8px; color: #999; border-radius: 1px; border:1px solid transparent; cursor:pointer;}
+.account-trade-record .tx-group .tx-item.active{color:#fb642a; border: 1px solid #fb642a;}
+.account-trade-record .stand-form{margin-bottom:10px; border-bottom:2px solid #f6f7fc;}
+.account-trade-record .stand-form fieldset{margin-left: -35px; padding-top: 15px;}
+.account-trade-record .el-tabs__header .el-tabs__item{font-size:16px;}
+.account-trade-record .money-outline{overflow: hidden; padding:20px 15px;}
+.account-trade-record .money-outline .item{float: left; width:250px;}
+.account-trade-record .money-outline .item-name{color:#888; font-size:14px;}
+.account-trade-record .money-outline .item-value{margin:15px 0px; color:#333; font-size:30px; font-weight: 600;}
+.account-trade-record .money-outline .item-remark{color:#888; font-size:12px;}
+.account-trade-record .tx-table{padding:10px 15px 5px;}
+/*** 账户管理 end **/
+
+// 表格无数据提示样式
+.noDataMsg {
+  text-align: center;
+  color: gray;
+}

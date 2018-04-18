@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+/* *{margin:0;padding:0;list-style-type:none;} */
+
+.tab1{margin:0;padding:0;width:100%;border-top:#ccc solid 1px;border-bottom:#cccccc solid 1px;}
+.menu{margin:0;padding:0;height:28px;border-right:#ccc solid 1px; font-size:14px;}
+.menu ul{margin:0px;padding:0px;}
+.menu li{margin:0;padding:0;list-style-type:none;float:left;padding:0px 20px;text-align:center;line-height:28px;height:28px;cursor:pointer;border-left:#ccc solid 1px;border-bottom:#ccc solid 1px;color:#666;overflow:hidden;background:#E0E2EB;}
+.menu li.off{margin:0;background:#fff;padding:0px 20px;color:#336699;font-weight:bold; border-bottom:none;}
+.menudiv{margin:0;padding: 20px;border-left:#cccccc solid 1px;border-right:#cccccc solid 1px;border-top:0;background:#fefefe}
+.menudiv > div{margin:0;padding:0;line-height:28px;}
+/* 代码整理：懒人之家 www.lanrenzhijia.com */

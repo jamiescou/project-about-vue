@@ -1,0 +1,218 @@
+// $baseColor:#fb642a;
+$baseColor:#fba72a;
+$baseLightColor: #fff5f1;
+
+/******table start ***********/
+.table-r {
+	width: 100%;
+	margin-bottom: 20px;
+	max-width: 100%;
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+	box-sizing: border-box;
+}
+
+.table-th-block thead tr th, .table-th-block tbody tr td {
+	padding: 10px;
+	text-align: center;
+	/* border-bottom: none; */
+	line-height: 1.42857143;
+}
+
+.table-th-block thead tr td {
+	background-color: transparent;
+}
+
+.table-th-block .point {
+	color: #FF8516;
+}
+
+.table-primary {
+	background-color: #fff;
+}
+
+.table-primary thead th {
+	font-size: 16px;
+}
+
+.table-primary tbody tr {
+	font-size: 14px;
+	border-bottom: 1px dashed #000;
+}
+
+.table-primary tbody td {
+	font-size: 14px;
+}
+
+.table-primary thead {
+	background-color: #f2f2f2;
+}
+
+/**Êý¾Ý±í¸ñ**/
+.table-data {
+	background-color: #fff;
+}
+
+.table-data thead th {
+	font-size: 14px;
+	border: 1px solid $baseColor;
+}
+
+.table-data tbody tr {
+	font-size: 14px;
+}
+
+.table-data tbody td {
+	font-size: 14px;
+	border: 1px solid #e4e4e4 !important;
+}
+
+.table-data thead {
+	background-color: $baseColor;
+	color: #fff;
+}
+
+/****base table ****/
+
+.table-base {
+	border-collapse: collapse;
+	border-spacing: 0;
+	box-sizing: border-box;
+}
+
+.table-base thead th {
+	font-size: 14px;
+	border-bottom: 1px solid #e4e4e4;
+	border-top: 1px solid #e4e4e4;
+	font-weight: normal;
+	text-align: center;
+	height: 45px;
+}
+
+.table-base tbody td {
+	font-size: 14px;
+	border-bottom: 1px solid #e4e4e4;
+	font-weight: normal;
+	text-align: center;
+}
+
+.table-base  tr td:last-of-type, th:last-of-type {
+	border-right: 1px solid #e4e4e4 !important;
+}
+
+.table-base  tr td:first-of-type, th:first-of-type {
+	border-left: 1px solid #e4e4e4 !important;
+}
+/**table for  page */
+.table-page {
+	float: right;
+	margin-right: 0px;
+}
+
+.table-page span {
+	padding: 5px 10px;
+	border: 1px solid #a4a4a4;
+	margin-left: 5px;
+	border-radius: 3px;
+}
+
+.table-page span:hover {
+	padding: 5px 10px;
+	background-color: #f2f2f2;
+	border: 1px solid #a4a4a4;
+	margin-left: 5px;
+}
+
+.table-page .active {
+	padding: 5px 10px;
+	background-color: $baseColor;
+	border: 1px solid #a4a4a4;
+	margin-left: 5px;
+	color: #fff;
+}
+
+.table-page .active:hover {
+	color: #000;
+}
+
+.table-operation {
+	color: $baseColor;
+	text-decoration: none;
+	margin-left: 10px;
+	word-break:keep-all;
+	white-space:nowrap;
+}
+
+.table-box {
+	padding: 20px;
+	/* 	margin-top:15px; */
+	position:relative;
+}
+
+.table-box .title {
+	display:block;
+	font-weight: bold;
+	margin:10px 0px;
+
+}
+.table-box .toolsbar{
+	display: block;
+	// width:100%;
+	position: absolute;
+	float: right;
+	margin:10px 0px;
+	font-size: 12px;
+  right: 20px;
+}
+
+.table-data thead{background:#f4f4f4 !important;}
+.table-data thead th{color:#999; border-color:#d3d3d3 !important; font-weight:300 !important;}
+.table-data tbody td{color:#333; border-color:#d3d3d3 !important;}
+
+/************* 左右形式 start *************/
+.table-lr{border-collapse: collapse; border-spacing: 0; box-sizing: border-box;}
+.table-lr tr td {height:50px; line-height:25px; font-size: 14px; border: 1px solid #e5e6e7 !important;}
+.table-lr tr td.l{padding-right:15px; color:#888; text-align:right; background:#f4f4f4;}
+.table-lr tr td.r{padding:0px 15px; text-align:left;}
+/************* 左右形式 end *************/
+
+/************* 上下形式 start *************/
+.table-tb{border-collapse: collapse; border-spacing: 0; box-sizing: border-box;}
+.table-tb tr th, .table-tb tr td{height:50px; line-height:25px; font-size: 14px; text-align:center; border: 1px solid #e5e6e7 !important;}
+.table-tb tr th{color:#888; font-weight:300; background:#f4f4f4;}
+.table-tb tr td{}
+/************* 上下形式 end *************/
+
+/************* 有操作功能的表格 start ************/
+.table-op .el-table{border-width:0px;}
+.table-op .el-table td{height: 50px;}
+.table-op .el-table th, .table-op .el-table th.is-leaf, .table-op .el-table td{border-width:0px;}
+.table-op tr td:first-of-type, .table-op th:first-of-type{border-left-width:0px !important;}
+.table-op tr td:last-of-type, .table-op th:last-of-type{border-right-width:0px !important;}
+.table-op .el-table__header-wrapper thead div, .table-op .el-table__fixed-header-wrapper thead div{color:#999; font-weight:300;}
+.table-op .el-table th, .table-op .el-table th div{background:#fff;}
+.table-op .el-table--striped .el-table__body tr:nth-child(1n) td{background:#fafafa;}
+.table-op .el-table--striped .el-table__body tr:nth-child(2n) td{background:#fff;}
+.table-op .el-table .el-table__body tr.hover-row>td{background:$baseLightColor;}
+/************* 有操作功能的表格 start ************/
+
+/************* 修改ele表格样式与设计稿一致 start ************/
+.el-table{border-width:0px;}
+.el-table .el-table__header{border-width:0px;}
+.el-table .el-table__header th, .el-table .el-table__header th.is-leaf{border-width:0px;}
+.el-table .el-table__header th:first-of-type{border-left-width:0px !important;}
+.el-table .el-table__header th:last-of-type{border-right-width:0px !important;}
+.el-table .el-table__header th, .el-table .el-table__header th div{background:#fff;}
+.el-table .el-table__header-wrapper thead div, .el-table .el-table__fixed-header-wrapper thead div{color:#999; font-weight:300;}
+
+.el-table .el-table__body td{height: 50px; border-width:0px;}
+.el-table .el-table__body td:first-of-type{border-left-width:0px !important;}
+.el-table .el-table__body td:last-of-type{border-right-width:0px !important;}
+.el-table--striped .el-table__body tr:nth-child(1n) td{background:#fafafa;}
+.el-table--striped .el-table__body tr:nth-child(2n) td{background:#fff;}
+.el-table .el-table__body tr.hover-row>td{background:$baseLightColor;}
+.el-table::after, .el-table::before{height:0px;}
+.el-table__fixed-right::before, .el-table__fixed::before{height:0px;}
+.el-table__fixed-right{height:100%!important;}
+/************* 修改ele表格样式与设计稿一致 start ************/

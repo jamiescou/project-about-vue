@@ -1,0 +1,182 @@
+@import "../main";
+.register{
+	width:100%;
+	min-width: 1150px;
+	// margin-bottom:20px;
+}
+.register .left{
+	background-color:#f2f2f2;
+
+	margin-bottom:5px;
+	width: 100%;
+}
+
+
+.register-success {
+	width:100%;
+	position:relative;
+	padding:10px;
+}
+.register-success .content{
+	width:100%;
+	position:relative;
+	border:1px dashed #339999;
+	padding:40px;
+}
+.register-success .content .info{
+	width:190px;
+	margin:0px auto;
+}
+.register-success .content img{
+	float:left;
+}
+.register-success .content .info span{
+	margin-left:45px;
+	display:block;
+	color:#11cd6e;
+}
+.register-success .content .to-member{
+    width: 410px;
+    margin: 0px auto;
+}
+.register-success .content .to-member span{
+    float:left;
+}
+.register-success .window{
+	padding-top:20px;
+}
+.register-success .window span{
+	margin-left:21px;
+}
+.register-success .floor{
+	padding:0px;
+	margin:20px 0px;
+}
+.register-success .floor .item{
+	height:70px;
+	padding:5px 30px;
+	border:1px solid #f2f2f2;
+}
+.register-success .floor .active{
+	background:#f2f2f2;
+}
+
+.register-success .floor .lable-info{
+    display: block;
+    width: 100px;
+    float: right;
+    margin-top: -16px;
+    color: #68ce70;
+    text-decoration:none;
+}
+
+.register-success .floor img{
+	width:50px;
+	float:left;
+    margin: 5px 20px 0px 0px;
+}
+.register-success .floor h5{
+	margin: 0 0 12px;
+}
+.register-success .floor .button-sm{
+	padding:5px 20px;
+	width:120px;
+	float:right;
+   	margin-top: -20px;
+}
+
+.member-type{
+	border:1px solid #339999;
+	height:170px;
+	width:200px;
+	position:relative;
+}
+
+.member-type .title{
+	width:80px;
+	margin:0px auto;
+	text_algin:center;
+	padding:15px 15px 5px;
+	border-bottom: 1px dashed #339999;
+	color:#339999;
+}
+.member-type .area{
+	padding:10px 20px;
+	color:#339999;
+}
+.member-type .floor{
+	height:20px;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	background:#f2f2f2;
+   	padding: 0px;
+    height: 25px;
+}
+.member-type .floor img{
+	display:block;
+	height:20px;
+	width:20px;
+	margin:2px auto;
+}
+.authent-form .dashed-line{
+	border-color: #339999;
+    margin-bottom: 30px;
+}
+.authent-form fieldset legend{
+	margin:0px;
+}
+
+.protocol-sign {
+	width:100%;
+	padding:20px
+}
+
+.protocol-sign .title{
+
+}
+.protocol-sign .title .name{
+	display:block;
+	font-size:16px;
+	padding:0px 0px 20px;
+}
+.protocol-sign .title .sec-name{
+	display:block;
+	font-size:14px;
+	padding:10px 20px;
+}
+.protocol-sign .space{
+	border:1px solid #e4e4e4;
+	padding:20px;
+}
+.protocol-sign .space .title{
+	text-align:center;
+	display:block;
+	font-size:14px;
+}
+.protocol-sign .signature{
+	margin-top:50px;
+}
+.protocol-sign .signature .title{
+	display:block;
+	text-align: center;
+	margin:10px auto;
+}
+.protocol-sign .signature .sign{
+	color:red;
+	border:1px dashed red;
+	width:80px;
+	height:80px;
+	text-align:center;
+    vertical-align: middle;
+    line-height: 80px;
+    border-radius: 50%;
+    margin:0px auto;
+}
+
+.add-sign{
+    background-color: #e4e4e4;
+    top: 747px;
+    left: 71px;
+    width: 434px;
+}

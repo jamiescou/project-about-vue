@@ -1,0 +1,1537 @@
+
+/*****base theme color ************/
+// $baseColor:#fb642a;
+$baseColor:#fb642a;
+$inputBorder: #fb642a;
+$disabledBorder: #e3e3e3;
+$disabledWord: #ddb3b7;
+$disabledBg: #f4f4f4;
+$hoverColor: #fba72a;
+$btnBg: #fb642a;
+$btnActiveBg: #fd4c23;
+$color: #fb642a;
+$radioColor: #fe3748;
+$baseLightColor: #fff5f1;
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {color:red;}
+input:-moz-placeholder, textarea:-moz-placeholder {color:red;}
+input::-moz-placeholder, textarea::-moz-placeholder {color:red;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {color:red;}
+
+::-webkit-input-placeholder { /* WebKit browsers */ color: orange; }
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: orange; }
+::-moz-placeholder { /* Mozilla Firefox 19+ */ color: orange; }
+:-ms-input-placeholder { /* Internet Explorer 10+ */ color: orange; }
+
+
+.el-date-table td.in-range{background:$baseLightColor}
+.el-date-table td.in-range:hover{background:$baseLightColor}
+.el-date-table td.available:hover{background:$baseLightColor}
+.el-pager li.active{border-color:$baseColor; background-color:$baseColor;}
+.el-loading-spinner .path{stroke: $baseColor;}
+.el-select:hover .el-input__inner{border-color:#fb642a;}
+
+
+/************* for media querys width ****************/
+$screen-sm-min: 968px;
+$screen-xs-max: ($screen-sm-min - 1);
+
+$screen-md-min: 1192px;
+$screen-sm-max: ($screen-md-min - 1);
+
+$screen-lg-min: 1400px;
+$screen-md-max: ($screen-lg-min - 1);
+
+html,body,form{width:100%;height:100%;margin:0;padding:0;}
+*{
+	margin:0;
+	padding:0;
+
+}
+html {
+	font-size: 62.5%;
+}
+#app{
+	height:100%;
+}
+
+body {
+	font-size: 1.4;
+}
+
+h1 {
+	font-size: 2.4rem;
+}
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: 微软雅黑,Arial, Helvetica, sans-serif !important;
+	overflow: hidden;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	main, menu, nav, section, summary {
+	display: block;
+}
+
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.button-bar {
+	position: relative;
+	padding: 20px 10px
+}
+
+a:hover, a:focus {
+	text-decoration: none;
+	color: $inputBorder;
+	cursor: pointer
+}
+
+a {
+	color: #000;
+}
+
+.fl {float: left;}
+.fr{float: right;}
+.clearfix{zoom:1}
+.clearfix:after{clear:both;display:block}
+.pointer{cursor: pointer;}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.4;
+}
+
+h1 {
+	font-size: 2.4rem;
+}
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+	height:100%;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	// height:100%;
+	min-height: 400px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	main, menu, nav, section, summary {
+	display: block;
+}
+
+audio, canvas, progress, video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+.right {
+	float: right;
+}
+
+/* 页面公用内容样式-start  cl */
+.pt-pl20 {
+	padding-top: 20px;
+	padding-left: 20px;
+}
+/* 页面公用内容样式-end  cl */
+
+
+
+@media screen and (max-width: $screen-xs-max) {
+}
+@media screen and (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+}
+@media screen and (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+}
+@media screen and (min-width: $screen-lg-min) {
+}
+
+/* 页面换肤  start */
+.el-radio__input.is-checked .el-radio__inner, .el-checkbox__input.is-checked .el-checkbox__inner{
+	border-color: $radioColor;
+  background: $radioColor;
+}
+.el-button--primary{background:$baseColor; border-color: $baseColor;}
+.el-button--primary.is-active, .el-button--primary:active, .el-button--primary:focus, .el-button--primary:hover{background:$btnActiveBg}
+
+.el-input.is-disabled .el-input__inner {
+	background-color: $disabledBg;
+  border-color: $disabledBorder;
+}
+.el-input__inner, .el-input-group__append, .el-input-group__prepend, .el-radio__inner {
+	border-color: $disabledBorder;
+}
+.el-input__inner:hover {
+	border-color: $inputBorder;
+}
+.el-input-group__append, .el-input-group__prepend {
+	color: $disabledWord;
+}
+.el-radio__inner:hover, .el-textarea__inner:focus, .el-textarea__inner:hover, .el-checkbox__inner:hover {
+	border-color: $inputBorder;
+}
+.el-textarea__inner {
+	border-color: $disabledBorder;
+}
+.el-date-table td.current:not(.disabled), .el-date-table td.end-date, .el-date-table td.start-date, .el-tabs__active-bar, .el-select-dropdown__item.selected {
+	background: $inputBorder!important;
+}
+.el-date-picker__header-label.active, .el-date-picker__header-label:hover, .el-picker-panel__icon-btn:hover, .el-button--text,
+.el-button--text:active, .el-tabs__header .el-tabs__item.is-active {
+	color: $baseColor;
+}
+.el-date-table td.today:before {
+	border-top: .5em solid $inputBorder;
+}
+.el-button--default:focus, .el-button--default:hover {color: $inputBorder;}
+.el-button:focus, .el-button:hover {border-color: $inputBorder;}
+.el-tag--gray{background-color: $baseLightColor; border-color: $baseLightColor; color: $baseColor;}
+/* 页面换肤  end*/
+
+
+
+.content-m  {
+
+	// max-width:1900px;
+	min-width:1100px;
+	// margin:0px auto;
+	width:100%;
+	height: 100%;
+}
+
+.content-m .header {
+	position: relative;
+	margin:0px auto;
+	height: 80px;
+	width:100%;
+	background: #fff;
+	// box-shadow:2px 0px 2px #e6e7e9;
+}
+.content-m .header .title{
+	display: block;
+	float:left;
+	width: 300px;
+	margin: 28px 20px 0px 20px;
+	font-size: 18px;
+}
+
+.content-m .header {
+	// max-width:1400px;
+
+}
+
+.content-m .header .nav {
+	position: relative;
+	display: inline-block;
+	padding-top: 20px;
+	float: right;
+	margin-right: 250px;
+}
+
+.content-m .header .right .iconfont {
+	cursor: pointer;
+}
+
+
+.content-m .header .nav a {
+	font-size: 20px;
+	margin-left: 20px;
+	color: #000;
+	text-decoration: none;
+}
+
+.content-m .header .nav a:hover, a:foucs {
+	border-bottom: 1px solid $baseColor;
+}
+
+.content-m .header .nav a:active {
+	border-bottom: 1px solid $baseColor;
+}
+
+/************menu-bar start **************/
+.content-m .header .menu-bar {
+
+	position:absolute;
+	right:30px;
+	margin-right:30px;
+	margin-top: 20px;
+	padding: 0px;
+	float:right;
+	overflow:hidden;
+	height:auto;
+	list-style: none;
+  background-color: #fff;
+	z-index:100;
+}
+.content-m .header .menu-bar > li {
+	float: left;
+
+}
+
+.content-m .header .menu-bar a{
+	display: block;
+    text-decoration: none;
+    height: 38px;
+    text-align: center;
+    line-height: 38px;
+
+}
+
+.content-m .header .menu-bar .drop-down {
+
+	overflow:hidden;
+	border:1px solid #bcbcbc;
+	width:130px;
+}
+
+
+.content-m .header .menu-bar .drop-down .title {
+	font-size:14px;
+}
+
+.content-m .header .menu-bar .drop-down-content {
+	// position: absolute;
+	list-style: none;
+	display:block;
+	padding:0px;
+	// border: 1px solid #bcbcbc;
+}
+.content-m .header .menu-bar .drop-down-content>li {
+	padding-left: 20px;
+	display:block;
+}
+/************menu-bar end **************/
+
+
+
+
+.content-m .login {
+	position: absolute;
+	// padding: 10px 10px;
+	right: 0px;
+	top: 38px;
+}
+.content-m .login a{
+	text-decoration:none;
+	font-size: 14px;
+}
+.content-m .login a:first-of-type{
+	margin-right: 10px;
+}
+.button-bar {
+	position: relative;
+	padding: 20px 10px
+}
+
+.button-sm, .button-md, .button-bg, .button-thin {
+	float: left;
+	cursor: pointer
+}
+
+.button-bar  .button-sm, .button-md, .button-bg, .button-thin {
+	margin-left: 15px;
+}
+
+
+.button-thin {
+	padding: 3px 15px;
+	color: #fff;
+	text-align: center;
+	vertical-align: middle;
+	background-color:$baseColor;
+	border: 1px solid $baseColor;
+}
+
+.button-thin:hover {
+	color: $baseColor;
+	background-color: #fff;
+}
+.button-bubi-theme{
+	background: $inputBorder;
+	border:1px solid $inputBorder;
+}
+.button-bubi-theme:hover{
+	background: #49b49d;
+	border:1px solid #49b49d;
+}
+.button-bubi-theme.button-expire, .button-bubi-theme.button-expire:focus{background: #ccc; border: 1px solid #bbb;}
+.button-bubi-theme.button-expire:hover{background: #bbb; border: 1px solid #bbb;}
+.button-sm {
+	display: block;
+	width: 80px;
+	background-color: $baseColor;
+	border: 1px solid $baseColor;
+	vertical-align: middle;
+	text-align: center;
+	padding: 6px 0px;
+	color: #fff;
+}
+
+.button-sm:hover {
+	color: $baseColor;
+	background-color: #fff;
+}
+
+.radius-4 {
+	border-radius: 4px;
+}
+
+.radius-8 {
+	border-radius: 8px;
+}
+
+.radius-12 {
+	border-radius: 12px;
+}
+
+.roof {
+	margin: 0px auto;
+	position: relative;
+	width: 100%;
+}
+
+.roof .background {
+	width: 100%;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+
+/***************info-box start*****************/
+.info-box {
+	width: 330px;
+	background: #fff;
+	height: auto;
+	padding: 20px 20px;
+  box-shadow: 0px 0px 2px #999;
+	margin-left: 140px;
+	border-radius: 3px;
+}
+
+.info-box .item {
+	padding: 10px 0px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.info-box .item img {
+	width: 20px;
+	height: 20px;
+	margin-left: 15px;
+	margin-right: 5px;
+	float: left;
+}
+
+.info-box .title {
+	text-align: center;
+}
+
+.info-box .title span {
+	display:block;
+	font-size: 17px;
+	// color: $baseColor;
+	margin: 20px;
+	color: #b1b1b1;
+	cursor: pointer;
+}
+.info-box .title .acitve {
+	color: $color;
+}
+
+
+.info-box.item .right {
+	float: right;
+}
+
+.info-box .forget {
+	margin-top: 10px;
+}
+
+.info-box .forget a {
+	color: #fff !important;
+	margin-top: 10px;
+	padding: 0px 20px;
+	text-decoration: none;
+}
+
+.info-box .login-button {
+	width: 100%;
+	height: 40px;
+	background-color: $btnBg;
+	color: #000;
+	border: 0px;
+	margin-top: 10px;
+	cursor:pointer;
+	color:#fff;
+}
+
+.info-box .tip {
+	margin-top: 10px;
+	// width: 100%;
+	height: 40px;
+	width:100%;
+	// color: #fff;
+	color:$baseColor;
+	text-align:center;
+	font-size:12px;
+}
+.info-box .tip span {
+	// display: block;
+	float:left ;
+	margin-left:2px;
+	color:#000 ;
+	cursor: pointer;
+}
+.info-box .tip span a{
+	// display: block;
+	margin-left:2px;
+	color:$color ;
+	cursor: pointer;
+}
+.info-box .tip .forget-password {
+	float:right;
+}
+/***************info-box end*****************/
+.dashed-line {
+	border-bottom: 1px dashed #fff;
+	margin-top: 10px;
+}
+
+.solid-line {
+	border-bottom: 1px solid #e4e4e4;
+	margin-top: 10px;
+}
+
+.solid-line, .dashed-line .center {
+	margin: 0px auto;
+}
+
+.center {
+	margin : 0px auto;
+}
+.under-line {
+	width: 20px;
+	height: 2px;
+	background: #fff;
+	border: 1px solid #fff;
+	margin-bottom: -1px;
+	margin-left: 15px
+}
+
+/******window start ***********/
+.window {
+	position: relative;
+	width: 100%;
+}
+
+.window .roof {
+	margin-top: 20px;
+}
+
+.window .roof .title {
+	display: block;
+	margin: 0px auto;
+	margin-top: -45px;
+	width: 80px;
+	font-size: 20px;
+}
+
+.window .roof img {
+	margin: 0px auto;
+	display: block;
+}
+
+.window .content {
+	padding-top: 50px;
+}
+
+.window .content .title {
+	padding-top: 30px;
+	display: block;
+	margin: 0px auto;
+	margin-top: -20px;
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+}
+
+.window .content .pic-big {
+	margin: 0px auto;
+	display: block;
+	-webkit-transform: rotate(-90deg);
+}
+
+.window .content .pic-sm {
+	margin: 0px auto;
+	display: block;
+	-webkit-transform: rotate(-90deg);
+	margin-top: -45px;
+}
+/******window end ***********/
+/******floor start ***********/
+.floor {
+	position: relative;
+	width: 100%;
+	padding: 20px;
+}
+
+.floor .toolbar {
+	position: relative;
+	width: 100%;
+	height: 80px;
+	background: #f2f2f2;
+}
+
+.floor .toolbar .title {
+	display: block;
+	float: left;
+	height: 70px;
+	vertical-align: middle;
+	line-height: 70px;
+	font-size: 16px;
+	margin-left: 20px;
+}
+/******floor end ***********/
+
+.page-position-base {
+	margin: 0px auto;
+	width: 390px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+
+
+.toolbar {
+	float: right;
+	margin-top: -30px;
+	margin-right: 65px;
+
+}
+.toolbar  a{
+	margin-right:10px;
+
+}
+/**tip-list**/
+.tip-list {
+	position: absolute;
+	height: auto;
+	padding: 10px 25px;
+	z-index: 100;
+	background: #fff;
+	color: #000;
+	box-shadow: 1px 1px 4px #666;
+	top: 62px;
+	right: 27px;
+	top: 62px;
+}
+
+.tip-list .item {
+	padding: 5px 0px;
+	font-size: 14px;
+}
+
+.tip-list .dashed-line {
+	border-color: #a2a2a2;
+	margin-top: 8px;
+}
+
+.tip-list .under-line {
+	margin-left: 16px;
+}
+
+/**animation start**/
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	40%{
+	opacity:0.4;
+	}
+	100%{
+		opacity:0.7;
+	}
+}
+@-webkit-keyframes fade-in {
+
+	0% {
+		opacity: 0;
+	}
+
+	40%{
+		opacity:0.4;
+	}
+	100%{
+		opacity:0.7;
+	}
+}
+.animation-fide-in {
+	animation: fade-in;
+	animation-duration: 1.5s;
+	-webkit-animation: fade-in 1.5s;
+}
+
+/**animation end**/
+
+.input-login {
+	padding:10px 10px !important;
+	position: relative;
+	width:100%;
+	border: 1px solid #666666;
+	font-size:14px;
+	border-radius:1px;
+	background-color: transparent;
+	color: #666666;
+}
+input:focus {
+	border: 1px solid $inputBorder !important;
+	outline-color:$inputBorder !important;
+	outline:1px solid $inputBorder;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color: red;
+}
+
+input:-moz-placeholder, textarea:-moz-placeholder {
+	color: red;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+	color: red;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+	color: red;
+}
+:-ms-input-placeholder{color: red;}
+
+.footer {
+	position: absolute;
+	bottom: 0px;
+	width:100%;
+	background-color: #f2f2f2;
+
+}
+
+.footer .info {
+	padding-left: 4%;
+	margin-bottom: 0px !important;
+}
+
+.footer .info .title {
+	font-size: 16px;
+	font-weight: blod;
+	margin-bottom: 20px;
+}
+
+.footer .info span {
+	display: block;
+	margin: 10px;
+}
+
+.footer .info a {
+	display: block;
+	margin: 10px;
+}
+
+.footer .copyright {
+	background-color: #515151;
+	padding: 10px;
+	width: 100%;
+	margin-left:0px;
+}
+
+.footer .copyright div {
+	width: 440px;
+	color: #fff;
+	text-align:center;
+	margin: 0px auto;
+}
+
+.footer .code {
+
+}
+
+.footer .code img {
+	width: 100px;
+	display: block;
+	margin: 10px auto;
+}
+
+.footer .code span {
+	display: block;
+	margin: 10px auto;
+}
+.unite-form fieldset {border: 0px;}
+
+/* form Ïà¹Ø */
+.stand-form {
+	font-size: 14px;
+	background: #fff;
+	margin-bottom: 20px;
+}
+
+.stand-form fieldset {
+	border: 0px;
+	padding: 20px 20px 0px;
+	margin-left:-8px;
+}
+
+.stand-form fieldset legend {
+	font-size: 16px;
+	margin: 20px -10px;
+}
+
+.stand-form .form-row {
+	/*     margin-left:50px */
+	margin:15px 0px;
+}
+
+.stand-form .form-row label {
+	vertical-align: middle;
+	line-height: 30px;
+	text-align: right;
+	/* padding-right: 20px; */
+}
+
+.stand-form .form-row input[type=text], input[type=email], input[type=phone],
+	input[type=password], input[type=number], input[type=search], textarea
+	{
+	padding: 5px;
+	width: 100%;
+}
+
+.stand-form .form-row select {
+	padding: 5px;
+  height: 29px;
+	width: 100%;
+	background-color: #fff;
+	border-radius:4px;
+}
+
+.stand-form .form-row .sms {
+	width: 100%;
+	height: 100%;
+	background-color: #f2f2f2;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0px;
+	line-height: 30px;
+}
+
+.stand-form .form-row .button-big {
+	width: 100%;
+	padding: 10px;
+	background-color: #71b8b8;
+	border: 1px solid #71b8b8;
+	text-align: center;
+	color:#fff;
+}
+
+.stand-form .el-form-item__content{width:192px;}
+.stand-form .el-form-item__content .el-input{width:192px;}
+.stand-form .el-form-item__content .el-input__inner{width:192px;}
+.stand-form .el-form-item__content .el-icon-date{right:10px;}
+.stand-form .el-form-item__content .el-select-dropdown__item{width:192px;}
+.stand-form .last-item .el-form-item__content{width: 315px;}
+.stand-form .last-item.amount-range .el-form-item__content{width:542px;}
+
+
+.form-row .field {
+	position: relative;
+}
+
+.form-row .field .input-unit {
+	position: absolute;
+	right: 0px;
+	padding: 5px;
+	top: 0px;
+}
+
+.form-row .field .input-icon {
+	position: absolute;
+	right: 0px;
+	padding: 1px 5px 0px 0px;
+	top: 0px;
+	cursor: pointer;
+}
+
+.form-row .field .input-icon:hover {
+	color: $baseColor;
+}
+
+.field .timestart {
+	width: 40%;
+	position: relative;
+	float: left;
+}
+
+.field .to {
+	display: block;
+	margin: 2%;
+	float: left;
+}
+
+.field .timeend {
+	width: 40%;
+	position: relative;
+	float: left;
+}
+
+.stand-form .form-row .button-big:hover {
+	background-color: #fff;
+	color: #71b8b8;
+	border: 1px solid #71b8b8;
+}
+
+.stand-form .form-row .protocol {
+	width: 120px;
+	height: 120px;
+	border: 1px dashed #d5d5d5;
+}
+
+.stand-form .form-row .protocol .title {
+	display: block;
+	margin: 10px auto 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.stand-form .form-row .protocol .add {
+	width: 62px;
+	font-size: 90px;
+	line-height: 50px;
+	height: 50px;
+	margin: 7px auto;
+	display: block;
+}
+
+.form-label{
+	word-break:keep-all;           /* 不换行 */
+	white-space:nowrap;          /* 不换行 */
+}
+
+/************** unite-form start ****************/
+.unite-form {
+	font-size: 14px;
+	background: #fff;
+	margin-bottom: 20px;
+}
+
+.unite-form fieldset {
+	border: 0px;
+	padding: 20px 20px 0px;
+	margin-left:-24px;
+}
+
+.unite-form fieldset legend {
+	font-size: 16px;
+	margin: 20px -10px;
+}
+
+.unite-form .form-row {
+	/*     margin-left:50px */
+	margin:15px 0px;
+}
+
+.unite-form .form-row label {
+	vertical-align: middle;
+	line-height: 30px;
+	text-align: right;
+	/* padding-right: 20px; */
+}
+/************* unite-form end *****************/
+
+.info-block{
+	background:#f2f2f2;
+}
+.info-block .title{
+	display:block;
+	padding:5px;
+	text-align: center;
+	background:#e4e4e4;
+	margin-bottom:10px;
+	font-size: 12px;
+}
+.info-block p{
+	padding:30px;
+	font-size:12px;
+}
+.apointer {
+	color: $baseColor;
+	/* display:inherit; */
+}
+
+.identifying {
+	width: 100%;
+	height: 100%;
+}
+
+.path-nav {
+		margin-left:0px;
+		flex-basis:inherit;
+		width:100%;
+		max-width: 100%;
+}
+
+.path-nav ol {
+	padding: 0px;
+	display: none;
+}
+
+.path-nav ol li {
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+.path-nav ol li a {
+	text-decoration: none;
+}
+
+.text-vertical {
+	display: block;
+	width: 19px;
+	/* padding: 5px; */
+	margin: 0px auto;
+}
+
+/**unit start**/
+.unit-title {
+	margin: 40px 0px 20px;
+}
+
+.unit-title .area {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.right {
+	padding-right: 20px;
+}
+
+.right .area {
+	padding: 20px 0px;
+}
+
+/***modal  dialog   start****/
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 99999;
+	opacity: 1;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: auto;
+}
+
+.modalDialog:target {
+	opacity: 1;
+	// pointer-events: auto;
+}
+
+.modalDialog>div {
+	/* width: 400px; */
+	position: relative;
+	margin: 10% auto;
+/* 	padding: 5px 20px 13px 20px; */
+	border-radius: 4px;
+	background: #fff;
+	/* 		background: -moz-linear-gradient(#fff, #999);
+		background: -webkit-linear-gradient(#fff, #999);
+		background: -o-linear-gradient(#fff, #999); */
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover {
+	background: #00d9ff;
+}
+
+.modalDialog  .title{
+	background-color:#e4e4e4;
+	padding:10px 20px;
+	font-size:14px;
+	border-radius:6px 6px 0px 0px;
+}
+.modalDialog  .area{
+	width:100%;
+	padding:20px;
+}
+
+/****key tips start ***/
+.key-tips{
+	position:relative;
+	padding:5px 20px;
+	font-size:14px;
+	background-color:#f2f2f2;
+	margin-bottom:20px;
+}
+
+.require, .require-big {
+	color: #e82f3a;
+	font-size: 14px;
+	/* padding: 3px; */
+	vertical-align: middle;
+}
+.require {
+	font-size: 14px;
+}
+.require-big {
+	font-size: 24px;
+}
+/****key tips end ***/
+
+/******font-size start******/
+.font10{
+	font-size: 10px;
+}
+.font0{
+	font-size: 12px;
+}
+/**正文**/
+.font1{
+	font-size: 14px;
+}
+/**小标题**/
+.font2{
+	font-size: 16px;
+}
+/**标题**/
+.font3{
+	font-size: 18px;
+}
+/**大标题**/
+.font4{
+	font-size: 20px;
+}
+
+
+
+/*****font-size end*******/
+/**** icon start***********/
+.icon-sm{
+	font-size:12px;
+	margin:0px 2px;
+}
+
+.icon-red{
+	color:#990000;
+}
+.icon-green{
+	color:#339999;
+}
+/**** icon end***********/
+.line-spacing{
+  margin-top:20px;
+}
+
+.input-width input {
+    padding: 5px 22px 5px 5px;
+    width: 100%;
+}
+/************* right start ************/
+
+
+.content-area{
+	padding-bottom: 30px;
+	margin:20px 20px 0px !important;
+	background: #fff;
+	overflow: auto;
+}
+.content-area .cone{
+	padding-right:20px;
+	padding-left:20px;
+	margin:0px !important;
+	background: #f6f7fc;
+}
+
+
+.content-area .path-nav{
+	// margin-bottom: 20px;
+  // margin-top: 20px;
+	height:20px;
+}
+
+
+.content-area .content-box{
+	font-size:13px;
+}
+.content-body{ position: relative; background:#fff; overflow:auto;}
+.content-area .content-box .title{
+	margin:10px 5px;
+	font-size:14px;
+}
+.content-area .content-box .one-row{
+	margin:10px;
+}
+/************* right end ************/
+
+/************* sign start **********/
+.sign{
+	color:red;
+	border:1px dashed red;
+	width:80px;
+	height:80px;
+	text-align:center;
+    vertical-align: middle;
+    line-height: 80px;
+    border-radius: 50%;
+    margin:0px auto;
+}
+.n-sign-position{
+    position: absolute;
+    left:10px;
+    top:10px;
+}
+/************* sign end **********/
+
+/************** validate start **********/
+.validate{
+
+}
+/************** validate end **********/
+/*****************tabs start******************/
+.tab-menu{ position: relative; background:#fff; overflow:auto;}
+.tab-bar {margin:15px 10px;}
+.tab-bar .clear-left{ margin-left:-5px; }
+.tab-bar .active { background:$inputBorder; color:#fff; }
+.tab-bar .span-wrap{display: inline-block; border-left: 1px solid $baseColor;}
+.tab-bar .tab-button{display:inline-block; margin:0px; padding:3px 20px; border:1px solid $inputBorder; border-left-width:0px; cursor: pointer; }
+.tab-cnt{padding:1px 10px 20px; overflow:hidden; background:#fff;}
+.voucher-operate{padding-top:20px; background:#f6f7fc;}
+
+.list-table{
+	width:100%;
+}
+.list-table .item {
+	float:left;
+	width:50%;
+	padding:5px;
+	background:#f2f2f2;
+}
+.list-table .title {
+	font-size:16px;
+}
+/****************tabs end********************/
+/*****************left start*********************/
+.left-menu{
+	background: #2d2d2d;
+	padding-bottom: 30px;
+}
+.left-content{
+	background: #2d2d2d;
+}
+.left-menu .menu{
+	display: block;
+	position: relative;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+}
+
+.left-menu .menu .item{
+	width:100%;
+	margin-top:10px;
+}
+.left-menu .menu .item .name{
+		position: relative;
+		display:block;
+		padding-left:38px;
+		color: #fff;
+		font-size:18px;
+		overflow: hidden;
+}
+.left-menu .menu .item .name .iconfont{
+	font-size:24px;
+	margin-left:-2px;
+	margin-top:2px;
+}
+.left-menu .menu .item ul{
+	padding:0px 0px 0px 0px;
+	margin:0px;
+}
+.left-menu .menu .item ul a{
+	padding:0px;
+	margin:0px;
+	color:#6e797f;
+	text-decoration: none;
+
+}
+.left-menu .menu .item ul li {
+	font-size:14px;
+	padding:10px 0px 10px 55px;
+	list-style: none;
+
+}
+
+.left-menu .menu .item ul .active {
+	background:$baseColor;
+	color:#fff;
+}
+.left-menu .menu .item ul .active  a{
+	color:#fff !important;
+}
+
+// .left-menu .menu .item ul .active  .ex-area{ background:$baseColor; display:block; height: 42px; width: 3px; float: left; margin-left: -55px; margin-top: -10.5px;}
+
+.left-menu .logo {
+	position: relative;
+	height:80px;
+	overflow: hidden;
+	// background:$baseColor;
+	background: #fff;
+}
+
+.left-menu .logo img {
+	display: block;
+	margin:14px auto;
+}
+/***************left end **********************/
+/****************修正element开始 ******************/
+.el-button{
+	border-radius: 1px !important;
+}
+.el-form-item__label{
+	color:#333;
+}
+.el-input__inner{
+	border-radius: 0px !important;
+}
+.el-checkbox__inner{
+	border-radius: 1px;
+}
+
+.el-step__head.is-text.is-success {
+	background:$baseColor;
+	border-color:$baseColor;
+}
+.el-step__title.is-success{
+	color:$baseColor;
+}
+
+.el-step__icon > *{
+	line-height: 25px;
+}
+
+.v-modal{
+	opacity:0.9;
+	background: #333;
+}
+/*选项卡*/
+.el-tabs__header{margin-bottom:15px; border-bottom-width:0px;}
+.el-tabs__header .el-tabs__item{height:50px; color:#aaa; font-size:16px; line-height:50px;}
+.el-tabs__header .el-tabs__item.is-active{color:$baseColor;}
+.el-tabs__header .el-tabs__active-bar {height: 1px;}
+
+/****************修正element结束 ******************/
+
+/* *{margin:0;padding:0;list-style-type:none;} */
+
+/**.tab1{margin:0;padding:0;width:100%;border-top:#ccc solid 1px;border-bottom:#cccccc solid 1px;}
+.menu{margin:0;padding:0;height:28px;border-right:#ccc solid 1px; font-size:14px;}
+.menu ul{margin:0px;padding:0px;}
+.menu li{margin:0;padding:0;list-style-type:none;float:left;padding:0px 20px;text-align:center;line-height:28px;height:28px;cursor:pointer;border-left:#ccc solid 1px;border-bottom:#ccc solid 1px;color:#666;overflow:hidden;background:#E0E2EB;}
+.menu li.off{margin:0;background:#fff;padding:0px 20px;color:#336699;font-weight:bold; border-bottom:none;}
+.menudiv{margin:0;padding: 20px;border-left:#cccccc solid 1px;border-right:#cccccc solid 1px;border-top:0;background:#fefefe}
+.menudiv > div{margin:0;padding:0;line-height:28px;}**/
+/* 代码整理：懒人之家 www.lanrenzhijia.com */
+
+/*************修正element start ************/
+.el-tabs{
+	background: #fff;
+}
+.el-table__fixed-body-wrapper td{
+	background:#fff;
+}
+.el-input-group__append {
+	border-bottom-right-radius: 1px;
+	border-top-right-radius: 1px;
+}
+/*************修正element end ************/
+
+/************* router-link样式 ************/
+.router-link{text-decoration:none}
+
+/************* 修正search-btn激活样式 ************/
+.el-button--info:focus, .el-button--info:hover{background: $btnActiveBg;border: 1px solid $btnActiveBg;color: #fff;}
+.el-button--text:focus, .el-button--text:hover{color: $baseColor;}
+
+/*** textarea提示文字 ***/
+.el-textarea__inner{font-family: '微软雅黑'; border-radius:1px;}
+
+/************* margin 常用相关样式 start ************/
+.m0{margin:0px !important;} .m15{margin:15px !important;} .mt3{margin-top:3px;} .ml18{margin-left:18px;}
+.ml0{margin-left:0px !important;}		.ml5{margin-left:5px !important;}		.ml10{margin-left:10px !important;}		.ml15{margin-left:15px !important;}		.ml20{margin-left:20px !important;}		.ml30{margin-left:30px !important;}		.ml40{margin-left:40px !important;}
+.mb0{margin-bottom:0px !important;} .mb5{margin-bottom:5px !important;} .mb10{margin-bottom:10px !important;} .mb15{margin-bottom:15px !important;} .mb20{margin-bottom:20px !important;} .mb30{margin-bottom:30px !important;}	.mb40{margin-bottom:40px !important;}
+.mt0{margin-right:0px !important;}	.mr5{margin-right:5px !important;}	.mr10{margin-right:10px !important;}	.mr15{margin-right:15px !important;}	.mr20{margin-right:20px !important;}	.mr30{margin-right:30px !important;}	.mr40{margin-right:40px !important;}	.mr100{margin-right:100px !important;}
+.mt0{margin-right:0px !important;}	.mt5{margin-top:5px !important;}	.mt10{margin-top:10px !important;}		.mt15{margin-top:15px !important;}		.mt20{margin-top:20px !important;}		.mt30{margin-top:30px !important;}		.mt40{margin-top:40px !important;}
+/************* margin 常用相关样式 end ************/
+
+/************* padding 常用相关样式 start ************/
+.pb0{padding-bottom:0px !important;}	.pb15{padding-bottom:15px !important;}	.pb20{padding-bottom:20px !important;}	.pb30{padding-bottom:30px !important;}	.pb40{padding-bottom:40px !important;}
+.pl0{padding-left:0px !important;} 		.pl15{padding-left:15px !important;}		.pl20{padding-left:20px !important;}		.pl30{padding-left:30px !important;}		.pl40{padding-left: 40px !important;}
+.pt0{padding-top:0px !important;}			.pt15{padding-top:15px !important;}			.pt20{padding-top:20px !important;}			.pt30{padding-top:30px !important;}			.pt40{padding-top:40px !important;}
+.pr0{padding-right:0px !important;}		.pr15{padding-right:15px !important;}		.pr20{padding-right:20px !important;}		.pr30{padding-left:30px !important;}		.pr40{padding-right:40px !important;}
+/************* padding 常用相关样式 end ************/
+
+/************* width 常用相关样式 start ************/
+.w300{width:300px;}
+/************* width 常用相关样式 end ************/
+
+/************* width 常用颜色样式 start ************/
+.c333{color:#333}	.c666{color:#666}	.c999{color:#999}
+.cbubi{color:$baseColor;}
+/************* width 常用颜色样式 end ************/
+
+.tc{text-align: center;}
+
+
+// 搜索按钮样式
+.searchBtn{position: relative; width: 80px; margin-left:30px; padding-left: 24px;}
+.searchBtn .icon-search-bt{position: absolute;left: 13px;}
+
+.b-voucher-tpl .tr-remark{position:relative;}
+.b-voucher-tpl .tr-remark .remark{padding:13px 0px;height: 48px;}
+
+// 页面面包屑样式
+.crumbs {
+	padding:10px 0;
+}
+// 页面内容的padding及背景样式
+.content-style {
+	background: #fff;
+	padding: 20px;
+}
+
+
+
+
+/************* IE9、IE10、IE11 适配问题 start ************/
+@media screen and (min-width:0\0) {
+	.supplier-voucher-assign-pay-amount .el-input{height: 24px; padding-top:1px;}
+	.supplier-voucher-assign-pay-amount .el-form-item__error{top:33px;}
+	.supplier-voucher-assign-payee .el-input{height: 24px;}
+	.supplier-voucher-assign-payee .el-form-item__error{top: 33px;}
+	.supplier-voucher-assign-attachment .form-label{float:left;}
+	.supplier-voucher-assign-attachment .span1{float:left;}
+	.supplier-voucher-assign-btn{display:block; width:300px; margin:0 auto; text-align:center;}
+	// .supplier-voucher-assign .td-remark .remark{margin:12px 38px 0px 29px\9!important;}
+	.supplier-voucher-assign .form-label.span2{display: inline-block;}
+	.supplier-voucher-assign .field.span1{display:inline-block;}
+  .searchBtn{vertical-align:top;}
+	.supplier-voucher-assign .td-remark .remark{left:23px;}
+	.supplier-voucher-assign .td-remark .textarea-remark{left:108px!important;}
+	// 表头select后省略号处理
+	.el-table-column--selection .cell,.el-table th > .cell {
+		text-overflow: clip;
+	}
+	.ie-label-mt label { margin-top: 3px; }
+}
+/************* IE9、IE10、IE11 适配问题 end ************/
+
+
+/************* IE9、IE10 适配问题 start ************/
+.fl-ie9 {
+	float: left\9;
+}
+.mb8-ie9 {
+	margin-bottom: 8px\9;
+}
+.center-ie9 {
+	display: block\9;
+	margin: 0 auto\9;
+}
+/************* IE9、IE10 适配问题 end ************/
+
+.supplier-voucher-assign .td-remark .remark{left:23px!important;}
+.supplier-voucher-assign .td-remark .textarea-remark{left:108px!important;}
+/************* IE10、IE11适配问题 ************/
+@media screen and(-ms-high-contrast:active),(-ms-high-contrast:none) {
+	.supplier-voucher-assign-pay-amount .el-input{height: 24px; padding-top:1px;}
+	.supplier-voucher-assign-pay-amount .el-form-item__error{top:33px;}
+	.supplier-voucher-assign-payee .el-input{height: 24px;}
+	.supplier-voucher-assign-payee .el-form-item__error{top: 33px;}
+	.supplier-voucher-assign-attachment .form-label{float:left;}
+	.supplier-voucher-assign-attachment .span1{float:left;}
+	.supplier-voucher-assign .td-remark .remark{left:23px!important;}
+	.supplier-voucher-assign .td-remark .textarea-remark{left:108px!important;}
+	.voucher-remark-title-text{margin-right: 39px!important;}
+	.supplier-voucher-assign-btn{display:block; width:300px; margin:0 auto; text-align:center;}
+	//凭证详情
+	// .supplier-voucher-assign .td-remark .remark{margin:12px 28px 0px 18px!important;}
+  .searchBtn{vertical-align:top; }
+
+	// 搜索按钮样式
+	.searchBtn {
+		// margin-top:1px;
+		margin-left:30px;
+		vertical-align:top;
+	}
+	// 字体样式
+	body {
+		font-size: 125%;
+	}
+	// input左侧label样式
+	.el-form-item__label {
+		padding-top: 11px;
+	}
+
+	// 添加融资意向
+	.intention-add .el-form-item__content{margin-top:4px;}
+	.intention-add .cnt .paragraph .limit-form-item .el-form-item{width: 130px;}
+	.intention-add .cnt .paragraph .limit-form-item .el-icon-date{right:66px;}
+	.intention-add .cnt .paragraph .limit-form-item .el-input__inner{margin-left: -50px;}
+	.intention-add .cnt .paragraph .limit-form-item .el-input__icon{right:75px;}
+	.intention-add .cnt .paragraph .limit-form-item .el-input__inner{margin-left: -56px;}
+}
+/************* IE10、IE11适配问题 end ************/
+
+.contract-info label{line-height: 33px;}
+
+/** 贸易信息 **/
+.tradeinfo .file-item{margin-bottom:10px;}
+.contract-item{margin:10px 0px;}
+.contract-item label{width:100px; text-align:right;}
+.contract-item span{width: 550px; word-break: break-all;}
